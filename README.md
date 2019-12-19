@@ -81,4 +81,11 @@ It is done using `bee-queue`. `/jobqueue` route creates a job in the queue.
 
 ## Part 5 - Setup Monitoring For Queues
 
+```
+kubectl --kubeconfig="kube-conf.yaml" port-forward monitoring-prometheus-0 9090
+```
+
+<img width="284" alt="queuejobs" src="./images/queujobs.png">
+
+<img width="284" alt="checkouts" src="./images/checkouts.png">
 
