@@ -1,0 +1,17 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: newman-bot
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: newman
+            image: postman/newman
+            args:
+            - run
+            - https://www.getpostman.com/collections/3b8aa9cd9ddb684e5109
+          restartPolicy: OnFailure

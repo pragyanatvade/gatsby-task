@@ -1,0 +1,16 @@
+{
+  "name": "gatsby-task",
+  "version": "1.0.0",
+  "description": "Systems engineer task for gatsby interview process",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bee-queue": "^1.2.2",
+    "express": "^4.17.1",
+    "prom-client": "^11.5.3"
+  }
+}
